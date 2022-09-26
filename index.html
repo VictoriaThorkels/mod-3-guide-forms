@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="javascript" href="javascript.js">
+    <title>Contact Us</title>
+</head>
+
+<body>
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+</style>
+
+<h1>Contact Us</h1>
+<!--here I have a form. To be abel to validate it I but a name and onsubmit so that I can connect that to javascript. Then I but a action attribute so that I can link the submition to a page. I made an extra html for that.-->
+<form name="myForm" action="./submit.html" onsubmit="return validateForm()">
+<!--I but a div within the form but not the submit button so that I could style everything to my liking. as you can tell all the labels and inputs have a class so that I can style them seperatly-->
+<div id="form" class="center">
+    <div class="label">
+        <label for="fname">first name <span class="star">*</span> </label><br>
+    </div>
+<!--type:text-->
+    <div class="input">
+        <input type="text" id="fname" name="fname"><br><br>
+    </div>
+
+    <div class="label">
+        <label for="lname">last name <span class="star">*</span></label><br>
+    </div>
+
+    <div class="input">
+    <input type="text" id="lname" name="lname"><br><br>
+    </div>
+    
+    <div class="label">
+    <label for="email">email <span class="star">*</label><br>
+    </div>
+<!--type:email and a "required" valitation-->
+    <div class="input">
+    <input type="email" id="email" name="email" required><br><br>
+    </div>
+    
+    <div class="label">
+    <label for="phonenumber">phone number</label><br>
+    </div>
+<!--type: number-->
+    <div class="input">
+    <input type="number" id="phonenumber" name="phonenumber"><br><br>
+    </div>
+    
+    <div class="label">
+    <label for="subject">subject</label><br>
+    </div>
+    
+    <div class="input">
+    <input type="text" id="subject" name="subject"><br><br>
+    </div>
+    
+    <div class="label">
+    <label for="message">message</label><br>
+    </div>
+    
+    <div class="input" id="message">
+    <input type="text" id="message" name="message"><br><br>
+    </div>
+    
+
+</div>
+<!--type:submit-->
+<div class="center">
+    <input class="button" type="submit" id="submit" name="submit" value="submit">
+</div>
+</form>
+
+
+
+<script src="./javascript.js"></script>
+
+</body>
+</html>
